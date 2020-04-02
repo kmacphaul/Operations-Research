@@ -7,8 +7,8 @@ from scipy.optimize import fsolve
 import matplotlib.pyplot as plt
 
 #import data for italy
-url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
-df = pd.read_csv(url)
+csv_italy = "/Users/karamacphaul/Desktop/italy_covid.csv"
+df = pd.read_csv(csv_italy)
 
 #change dates into numnbers (start at jan 1)
 df = df.loc[:,['data','totale_casi']]
